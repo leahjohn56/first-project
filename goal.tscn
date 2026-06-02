@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dbe7egxcj0w42"]
+
+[ext_resource type="Texture2D" uid="uid://d1j1oae36is1c" path="res://lemon.png" id="1_6k3qi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0qle8"]
+radius = 67.0
+height = 142.0
+
+[node name="Goal" type="Area2D" unique_id=1981819333]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1463841586]
+position = Vector2(573, 397)
+scale = Vector2(0.017437486, 0.018352924)
+texture = ExtResource("1_6k3qi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=51414979]
+position = Vector2(572, 364)
+shape = SubResource("CapsuleShape2D_0qle8")
