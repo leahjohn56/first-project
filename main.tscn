@@ -38,4 +38,5 @@ position = Vector2(548, 442)
 position = Vector2(-322, -461)
 script = ExtResource("5_272bh")
 
+[connection signal="body_entered" from="Goal" to="Player" method="_on_goal_body_entered"]
 [connection signal="body_entered" from="Goal" to="Goal" method="_on_body_entered"]

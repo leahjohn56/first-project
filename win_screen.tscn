@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://b0lavs4kt68lg"]
+
+[ext_resource type="Script" uid="uid://cw682fugk0wn5" path="res://win_screen.gd" id="1_l2arl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_731nq"]
+bg_color = Color(0.92156863, 0.88235295, 0.6509804, 0.60784316)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l2arl"]
+bg_color = Color(0.9607843, 0.76862746, 0.8039216, 0.6039216)
+
+[node name="Win Screen" type="Control" unique_id=1025066565]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_l2arl")
+
+[node name="Label" type="Label" parent="." unique_id=1492716822]
+layout_mode = 0
+offset_left = 446.0
+offset_top = 253.0
+offset_right = 709.0
+offset_bottom = 341.0
+theme_override_colors/font_color = Color(1, 0.74503, 0.8180516, 1)
+theme_override_font_sizes/font_size = 80
+text = "You win!"
+
+[node name="Button" type="Button" parent="." unique_id=1498213337]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 365.0
+offset_right = 716.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(1, 0.6336578, 0.6967462, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_731nq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l2arl")
+text = "Play Again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
