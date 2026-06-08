@@ -22,3 +22,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	move_and_slide()
+
+
+func _on_enemy_mouse_shape_entered(shape_idx: int) -> void:
+	pass # Replace with function body.
